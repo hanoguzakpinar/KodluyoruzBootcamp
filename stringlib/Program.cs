@@ -9,41 +9,41 @@ namespace stringlib
             string txt = "CSharp Exercises";
             string txxt = "CSharp ";
 
-            System.Console.WriteLine("Uzunluk: "+txt.Length);
-            System.Console.WriteLine("Upper: "+txt.ToUpper());
-            System.Console.WriteLine("Lower: "+txt.ToLower());
+            Console.WriteLine("Uzunluk: "+txt.Length);
+            Console.WriteLine("Upper: "+txt.ToUpper());
+            Console.WriteLine("Lower: "+txt.ToLower());
 
-            System.Console.WriteLine(String.Concat(txt,"with me"));
+            Console.WriteLine(String.Concat(txt,"with me"));
 
-            System.Console.WriteLine(txt.CompareTo(txxt)); // uzunluk karşılaştırma 0 eşit 1 txt büyük -1 txxt büyük
-            System.Console.WriteLine(String.Compare(txt,txxt,true)); // true olursa büyükküçük harf duyarlı
-            System.Console.WriteLine(String.Compare(txt,txxt,false)); // false olursa büyükküçük harf duyarsız
+            Console.WriteLine(txt.CompareTo(txxt)); // uzunluk karşılaştırma 0 eşit 1 txt büyük -1 txxt büyük
+            Console.WriteLine(String.Compare(txt,txxt,true)); // true olursa büyükküçük harf duyarlı
+            Console.WriteLine(String.Compare(txt,txxt,false)); // false olursa büyükküçük harf duyarsız
 
-            System.Console.WriteLine(txt.Contains(txxt));
+            Console.WriteLine(txt.Contains(txxt));
 
-            System.Console.WriteLine(txt.EndsWith("ses"));
-            System.Console.WriteLine(txt.StartsWith("CS"));
+            Console.WriteLine(txt.EndsWith("ses"));
+            Console.WriteLine(txt.StartsWith("CS"));
 
-            System.Console.WriteLine(txt.IndexOf("CS"));
-            System.Console.WriteLine(txt.LastIndexOf("s"));
+            Console.WriteLine(txt.IndexOf("CS"));
+            Console.WriteLine(txt.LastIndexOf("s"));
 
-            System.Console.WriteLine(txt.Insert(16," 2021"));
+            Console.WriteLine(txt.Insert(16," 2021"));
 
-            System.Console.WriteLine(txt.Remove(10));
-            System.Console.WriteLine(txt.Remove(10,2));
+            Console.WriteLine(txt.Remove(10));
+            Console.WriteLine(txt.Remove(10,2));
 
-            System.Console.WriteLine(txt.Split(' ')[1]); // bölüp diziye atar.
+            Console.WriteLine(txt.Split(' ')[1]); // bölüp diziye atar.
 
-            System.Console.WriteLine(txt.Replace("CSharp","C#"));
-            System.Console.WriteLine(txt.Replace(" ",""));
+            Console.WriteLine(txt.Replace("CSharp","C#"));
+            Console.WriteLine(txt.Replace(" ",""));
 
-            System.Console.WriteLine(txt.Substring(8));
-            System.Console.WriteLine(txt.Substring(0,6));
+            Console.WriteLine(txt.Substring(8));
+            Console.WriteLine(txt.Substring(0,6));
 
-            System.Console.WriteLine(txt + txxt.PadLeft(10));
-            System.Console.WriteLine(txt + txxt.PadLeft(10,'*'));
-            System.Console.WriteLine(txt.PadRight(50) + txxt);
-            System.Console.WriteLine(txt.PadRight(50,'/') + txxt);
+            Console.WriteLine(txt + txxt.PadLeft(10));
+            Console.WriteLine(txt + txxt.PadLeft(10,'*'));
+            Console.WriteLine(txt.PadRight(50) + txxt);
+            Console.WriteLine(txt.PadRight(50,'/') + txxt);
             
         }
     }
