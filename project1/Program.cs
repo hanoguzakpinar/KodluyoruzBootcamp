@@ -30,38 +30,38 @@ namespace project1
             switch (secim)
             {
                 case 1:
-                    Person.AddPerson();
+                    PersonIO.AddPerson();
                     break;
 
                 case 2:
                     Console.WriteLine("Numarasını silmek istediğiniz kişinin soyadını giriniz:");
                     string y = Console.ReadLine();
-                    Person.Delete(y);
+                    PersonIO.Delete(y);
                     break;
 
                 case 3:
                     Console.WriteLine("Numarasını güncellemek istediğiniz kişinin soyadını giriniz:");
                     string z = Console.ReadLine();
-                    Person.Update(z);
+                    PersonIO.Update(z);
                     break;
 
                 case 4:
-                    Person.RehberListele();
+                    PersonIO.RehberListele();
                     break;
 
                 case 5:
-                    int ch = Person.Search();
+                    int ch = PersonIO.Search();
                     if (ch == 1)
                     {
                         Console.WriteLine("Aranacak isim veya soyisim:");
                         string x = Console.ReadLine();
-                        Person.Search(x);
+                        PersonIO.Search(x);
                     }
                     else if (ch == 2)
                     {
                         Console.WriteLine("Aranacak telefon:");
                         string x = Console.ReadLine();
-                        Person.Search(x, 0);
+                        PersonIO.Search(x, 0);
                     }
                     else
                     {
