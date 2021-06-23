@@ -32,7 +32,6 @@ namespace project1
             Person p3 = new Person("Oğuzhan", "Akpınar", "3333333333");
             Person p4 = new Person("Russel", "Westbrook", "3332222211");
             Person p5 = new Person("Devin", "Booker", "1112223388");
-            Person p6 = new Person("Lebron", "James", "5555554444");
 
             Person.kliste.Add(p1);
             Person.kliste.Add(p2);
