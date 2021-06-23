@@ -167,6 +167,48 @@ namespace project1
             }
         }
 
+        public static void Update(string name)
+        {
+            var itemToUpdate = kliste.SingleOrDefault(r => r.Soyisim == name);
+            if (itemToUpdate == null)
+            {
+                Console.WriteLine("Aradığınız krtiterlere uygun veri rehberde bulunamadı. Lütfen bir seçim yapınız.");
+                Console.WriteLine("* Güncellemeyi sonlandırmak için : (1) \n* Yeniden denemek için      : (2)");
+                int secim = int.Parse(Console.ReadLine());
+                switch (secim)
+                {
+                    case 1:
+                        Console.WriteLine("İşlem sonlandırıldı.");
+                        break;
+                    case 2:
+                        Program.SecimYap(3);
+                        break;
+                    default:
+                        Console.WriteLine("Hatalı seçim.");
+                        break;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Yeni isim değerini giriniz.:");
+                string x = Console.ReadLine();
+                Console.WriteLine("Yeni soyisim değerini giriniz.:");
+                string y = Console.ReadLine();
+                Console.WriteLine("Yeni numara değerini giriniz.:");
+                string z = Console.ReadLine();
+
+                itemToUpdate.Isim = x;
+                itemToUpdate.Soyisim = y;
+                itemToUpdate.No = z;
+
+                Console.WriteLine("İşlem Tamamlandı");
+
+                Person.RehberListele();
+            }
+
+
+        }
+
     }
 
 }

@@ -40,6 +40,9 @@ namespace project1
                     break;
 
                 case 3:
+                    Console.WriteLine("Numarasını güncellemek istediğiniz kişinin soyadını giriniz:");
+                    string z = Console.ReadLine();
+                    Person.Update(z);
                     break;
 
                 case 4:
