@@ -13,6 +13,8 @@
 x64/
 [Bb]in/
 [Oo]bj/
+.vscode/
+.vs/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
@@ -87,7 +89,7 @@ csx/
 AppPackages/
 
 # Others
-sql/
+
 *.Cache
 ClientBin/
 [Ss]tyle[Cc]op.*
@@ -129,3 +131,5 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+
+_NCrunch*
