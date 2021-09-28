@@ -6,16 +6,15 @@ namespace loops
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Sayi Gir:");
-            int sayi = int.Parse(Console.ReadLine());
-            for(int i=0;i<sayi;i++)
+            Console.WriteLine("number Gir:");
+            int number = int.Parse(Console.ReadLine());
+            for(int i=0;i<number;i++)
             {
                 if(i%2==1)
                 {
                     Console.WriteLine(i);
                 }
             }
-
 
             int ttoplam=0;
             int ctoplam=0;
@@ -31,15 +30,10 @@ namespace loops
                 {
                     ctoplam +=i;
                 }
-
             }
 
             Console.WriteLine("Tek Toplam :"+ttoplam);
             Console.WriteLine("Çift Toplam :"+ctoplam);
-
-
-
-
         }
     }
 }

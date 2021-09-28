@@ -10,7 +10,6 @@ namespace operators
             Console.WriteLine("Mantıksal Operatörler (||, &&, !)");
             Console.WriteLine("İlişkisel Operatörler (==,!=, <, >, >=,<=)");
             Console.WriteLine("Aritmetik (+, -, *, /, %, ++, --)");
-
         }
     }
 }

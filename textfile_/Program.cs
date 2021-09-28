@@ -17,7 +17,6 @@ namespace textfile_
 
             Console.WriteLine("-----------------------");
             
-
             FileStream fs = new FileStream(@"C:\Users\hanog\Documents\Projects\csharp\textfile_\textfile2_.txt",FileMode.Open,FileAccess.Read);
             StreamReader sr = new StreamReader(fs);
             string yazix = sr.ReadLine();
@@ -31,10 +30,7 @@ namespace textfile_
             sr.Close();
             fs.Close();
 
-
-
             Console.Read();
-
         }
     }
 }

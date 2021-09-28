@@ -17,9 +17,6 @@ namespace method
 
             Console.WriteLine("Toplam:"+toplam);
             Console.WriteLine("Carpma:"+carp);
-
-
-
         }
     }
 
@@ -34,6 +31,5 @@ namespace method
         {
             return x*y;
         }
-
     }
 }

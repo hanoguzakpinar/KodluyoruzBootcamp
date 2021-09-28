@@ -73,14 +73,14 @@ namespace collecti0nsNlist
             List<Users> kul = new List<Users>();
 
             Users kk = new Users();
-            kk.Ad = "Lebron";
-            kk.Soyad="James";
-            kk.Yas=36;
+            kk.Name = "Lebron";
+            kk.Surname="James";
+            kk.Age=36;
 
             Users kkk = new Users();
-            kkk.Ad = "Chris";
-            kkk.Soyad="Paul";
-            kkk.Yas=36;
+            kkk.Name = "Chris";
+            kkk.Surname="Paul";
+            kkk.Age=36;
 
             kul.Add(kk);
             kul.Add(kkk);
@@ -88,35 +88,26 @@ namespace collecti0nsNlist
             List<Users> newone = new List<Users>();
             // Alternatif
             newone.Add(new Users(){
-                Ad = "Russel",
-                Soyad="Westbrook",
-                Yas=32
+                Name = "Russel",
+                Surname="Westbrook",
+                Age=32
             }
             );
 
             foreach (var item in kul)
             {
-                System.Console.WriteLine("Ad: "+item.Ad+" Soyad: "+item.Soyad+" Yaş: "+item.Yas);
+                System.Console.WriteLine("Ad: "+item.Name+" Soyad: "+item.Surname+" Yaş: "+item.Age);
             }
-
-
-
-
-
-
-
-
         }
     }
-
     public class Users
     {
-        private string ad;
-        private string soyad;
-        private int yas;
+        private string name;
+        private string surname;
+        private int age;
 
-        public string Ad { get => ad; set => ad = value; }
-        public string Soyad { get => soyad; set => soyad = value; }
-        public int Yas { get => yas; set => yas = value; }
+        public string Name { get => name; set => name = value; }
+        public string Surname { get => surname; set => surname = value; }
+        public int Age { get => age; set => age = value; }
     }
 }

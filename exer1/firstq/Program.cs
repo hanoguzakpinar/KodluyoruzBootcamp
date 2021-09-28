@@ -17,18 +17,18 @@ namespace firstq
                 Environment.Exit(0);
             }
 
-            int[] sayilar = new int[N];
+            int[] numbers = new int[N];
 
             for (int i = 0; i < N; i++)
             {
                 Console.WriteLine("Sayı girin:");
-                sayilar[i] = int.Parse(Console.ReadLine());
+                numbers[i] = int.Parse(Console.ReadLine());
             }
 
             for (int i = 0; i < N; i++)
             {
-                if (sayilar[i] % 2 == 0)
-                 Console.WriteLine(sayilar[i]+" çifttir.");
+                if (numbers[i] % 2 == 0)
+                 Console.WriteLine(numbers[i]+" çifttir.");
             }
         }
     }

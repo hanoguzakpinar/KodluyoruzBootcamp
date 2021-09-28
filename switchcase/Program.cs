@@ -48,8 +48,6 @@ namespace switchcase
                     Console.WriteLine("Seçim Hatalı.");
                     break;
             }
-
-
         }
     }
 }

@@ -21,8 +21,8 @@ namespace degiskenler
 
             int f = 10, g, m = 70;
 
-            var a = 5;
-            var b = "metin";
+            var abd = 5;
+            var bcc = "metin";
         }
     }
 }

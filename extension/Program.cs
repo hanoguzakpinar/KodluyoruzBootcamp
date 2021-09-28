@@ -14,22 +14,18 @@ namespace extension
             Console.WriteLine(txt.BoslukVarMi());
             Console.WriteLine(txt.BoslukSil());
 
+            int[] numbers = { 0, 5, 3, 9, 2, 6, 7, 8, 1, 15, 17, 19, 21, 22 };
 
-            int[] sayilar = { 0, 5, 3, 9, 2, 6, 7, 8, 1, 15, 17, 19, 21, 22 };
+            numbers.Sirala();
 
-            sayilar.Sirala();
-
-            foreach (int item in sayilar)
+            foreach (int item in numbers)
             {
                 Console.WriteLine(item);
             }
 
-            sayilar.CiftMi();
-
-
+            numbers.CiftMi();
         }
     }
-
 
     public static class Extension
     {
@@ -37,6 +33,7 @@ namespace extension
         {
             return txt.ToUpper();
         }
+
         public static string MetinKucut(this string txt)
         {
             return txt.ToLower();
@@ -70,8 +67,7 @@ namespace extension
                 else
                     Console.WriteLine("Sayı saçmadır.");
             }
-
-
         }
+        
     }
 }

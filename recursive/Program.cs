@@ -12,7 +12,6 @@ namespace recursive
             int us = int.Parse(Console.ReadLine());
 
             System.Console.WriteLine(UsAl(sayi,us));
-
         }
 
         static int UsAl(int sayi , int us)

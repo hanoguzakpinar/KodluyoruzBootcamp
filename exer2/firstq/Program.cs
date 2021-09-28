@@ -12,18 +12,17 @@ namespace firstq
             // Negatif ve numeric olmayan girişleri engelleyin. *
             // Her bir dizinin elemanlarını büyükten küçüğe olacak şekilde ekrana yazdırın.*
             // Her iki dizinin eleman sayısını ve ortalamasını ekrana yazdırın.*
-            ArrayList sayilar = new ArrayList();
+            ArrayList numbers = new ArrayList();
             ArrayList asal = new ArrayList();
             ArrayList notasal = new ArrayList();
-
 
             try
             {
                 for(int i=0;i<10;i++)
                 {
                     Console.WriteLine("{0}. sayiyi giriniz:",i+1);
-                    sayilar.Add(int.Parse(Console.ReadLine()));
-                    if(Convert.ToInt32(sayilar[i])<0)
+                    numbers.Add(int.Parse(Console.ReadLine()));
+                    if(Convert.ToInt32(numbers[i])<0)
                         throw new Exception("Sayı negatif olamaz.");
                 }
             }
@@ -32,23 +31,21 @@ namespace firstq
                 throw new Exception("Geçersiz giriş.");
             }
 
-            
             for(int i=0;i<10;i++)
             {
                 int bs=0;
-                for(int j=1;j<Convert.ToInt32(sayilar[i]);j++)
+                for(int j=1;j<Convert.ToInt32(numbers[i]);j++)
                 {
-                    if(Convert.ToInt32(sayilar[i])%j==0)
+                    if(Convert.ToInt32(numbers[i])%j==0)
                         bs++;
                 }
 
                 if(bs==1)
-                    asal.Add(sayilar[i]);
+                    asal.Add(numbers[i]);
                 else
-                    notasal.Add(sayilar[i]);
+                    notasal.Add(numbers[i]);
                 
                 bs=0;
-
             }
 
             asal.Sort();
@@ -61,7 +58,6 @@ namespace firstq
             foreach (var item in notasal)
                 Console.WriteLine(item);
 
-
             int suma=0,sumb=0;
             foreach (int item in asal)
                 suma +=item;
@@ -70,9 +66,6 @@ namespace firstq
             
             Console.WriteLine("Asal Sayısı: {0} , Ortalaması: {1}",asal.Count,(float)suma/asal.Count);
             Console.WriteLine("Asal Olmayan Sayısı: {0} , Ortalaması: {1}",notasal.Count,(float)sumb/notasal.Count);
-            
-
-
         }
     }
 }

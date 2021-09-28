@@ -6,13 +6,13 @@ namespace ifelse
     {
         static void Main(string[] args)
         {
-            int saat = DateTime.Now.Hour;
+            int _hour = DateTime.Now.Hour;
 
-            if (saat>=6 && saat<11)
+            if (_hour>=6 && _hour<11)
             {
                 Console.WriteLine("Günaydın");
             }
-            else if (saat>11 && saat<18)
+            else if (_hour>11 && _hour<18)
             {
                 Console.WriteLine("İyi Günler.");
             }
@@ -21,9 +21,8 @@ namespace ifelse
                 Console.WriteLine("İyi Geceler.");
             }
 
-            string sonuc = saat>18 ? "İyi Geceler" : saat>=6 && saat<11 ? "Günaydın" : "İyi Günler";
+            string sonuc = _hour>18 ? "İyi Geceler." : _hour>=6 && _hour<11 ? "Günaydın." : "İyi Günler.";
             Console.WriteLine(sonuc);
-
         }
     }
 }

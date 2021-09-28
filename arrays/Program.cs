@@ -7,20 +7,20 @@ namespace arrays
         static void Main(string[] args)
         {
             Console.WriteLine("Eleman sayisi giriniz:");
-            int elm = int.Parse(Console.ReadLine());
-            int[] sayilar = new int[elm];
+            int _count = int.Parse(Console.ReadLine());
+            int[] numbers = new int[_count];
 
-            for(int i=0;i<sayilar.Length;i++)
+            for(int i=0;i<numbers.Length;i++)
             {
                 Console.WriteLine("{0}. sayiyi giriniz :",i+1);
-                sayilar[i] = int.Parse(Console.ReadLine());
+                numbers[i] = int.Parse(Console.ReadLine());
             }
-
-            foreach (var item in sayilar)
+            
+            Console.WriteLine("Sayilar");
+            foreach (var item in numbers)
             {
                 Console.WriteLine(item);
             }
-
         }
     }
 }

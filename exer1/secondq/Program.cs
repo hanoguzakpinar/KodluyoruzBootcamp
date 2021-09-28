@@ -26,25 +26,23 @@ namespace secondq
                 Environment.Exit(0);
             }
 
-            int[] sayilar = new int[N];
+            int[] numbers = new int[N];
 
             for (int i = 0; i < N; i++)
             {
                 Console.WriteLine("Sayı girin:");
-                sayilar[i] = int.Parse(Console.ReadLine());
+                numbers[i] = int.Parse(Console.ReadLine());
             }
 
             Console.WriteLine("Eşit veya Tam Bölünen");
 
             for (int i = 0; i < N; i++)
             {
-                if(sayilar[i]==M || M%sayilar[i]==0)
+                if(numbers[i]==M || numbers[i]%M==0)
                 {
-                    Console.WriteLine(sayilar[i]);
+                    Console.WriteLine(numbers[i]);
                 }
             }
-
-
         }
     }
 }

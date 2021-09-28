@@ -10,13 +10,11 @@ namespace staticExmpl
             Console.WriteLine("Toplama: " + Ops.Topla(5, 5));
             Console.WriteLine("Çıkarma: " + Ops.Cikar(5, 5));
 
-
             Console.WriteLine("Çalışan Sayısı : {0}", Worker.CalisanSayi);
             Worker wrk = new Worker("Oğuz", "Han");
             Console.WriteLine("Çalışan Sayısı : {0}", Worker.CalisanSayi);
             Worker wrkx = new Worker("Han", "Akpınar");
             Console.WriteLine("Çalışan Sayısı : {0}", Worker.CalisanSayi);
-
         }
     }
 
@@ -36,7 +34,6 @@ namespace staticExmpl
             return x1 * x2;
         }
     }
-
 
     class Worker
     {
@@ -59,7 +56,5 @@ namespace staticExmpl
         {
             calisanSayi = 0;
         }
-
-
     }
 }

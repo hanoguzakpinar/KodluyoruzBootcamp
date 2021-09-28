@@ -44,7 +44,6 @@ namespace stringlib
             Console.WriteLine(txt + txxt.PadLeft(10,'*'));
             Console.WriteLine(txt.PadRight(50) + txxt);
             Console.WriteLine(txt.PadRight(50,'/') + txxt);
-            
         }
     }
 }

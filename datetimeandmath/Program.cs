@@ -24,7 +24,6 @@ namespace datetimeandmath
             Console.WriteLine(DateTime.Now.ToLongTimeString());
             Console.WriteLine(DateTime.Now.ToShortTimeString());
 
-
             Console.WriteLine(DateTime.Now.ToString("dd"));
             Console.WriteLine(DateTime.Now.ToString("ddd"));
             Console.WriteLine(DateTime.Now.ToString("dddd"));
@@ -50,7 +49,6 @@ namespace datetimeandmath
             Console.WriteLine(Math.Round(25.3));
             Console.WriteLine(Math.Round(27.8));
 
-
             Console.WriteLine(Math.Max(27,8));
             Console.WriteLine(Math.Min(27,8));
 
@@ -59,9 +57,6 @@ namespace datetimeandmath
             Console.WriteLine(Math.Log(9));
             Console.WriteLine(Math.Log10(10));
             Console.WriteLine(Math.Exp(3));
-
-
-
         }
     }
 }

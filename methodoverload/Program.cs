@@ -21,7 +21,6 @@ namespace methodoverload
             {
                 xx.EkranaYaz("Başarısız");
             }
-
         }
     }
 
@@ -36,7 +35,5 @@ namespace methodoverload
         {
             Console.WriteLine(txt);
         }
-        
-
     }
 }

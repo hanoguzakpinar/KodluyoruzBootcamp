@@ -17,32 +17,31 @@ namespace constructor
 
             u1.SinifYukselt();
             u1.Yazdir();
-            
         }
     }
 
     class Users
     {
         private int _no;
-        private string _ad;
-        private string _soyad;
-        private int _sinif;
+        private string _name;
+        private string _surname;
+        private int _grade;
 
         public int No { get => _no; set => _no = value; }
-        public string Ad { get => _ad; set => _ad = value; }
-        public string Soyad { get => _soyad; set => _soyad = value; }
-        public int Sinif
+        public string Name { get => _name; set => _name = value; }
+        public string Surname { get => _surname; set => _surname = value; }
+        public int Grade
         {
-            get => _sinif;
+            get => _grade;
             set
             {
                 if (value< 1)
                 {
                     Console.WriteLine("Sınıf 1'den az olamaz.");
-                    this._sinif = 1;
+                    this._grade = 1;
                 }
                 else
-                    this._sinif = value;
+                    this._grade = value;
 
             }
 
@@ -51,24 +50,24 @@ namespace constructor
         public Users(int no, string ad, string soyad, int sinif)
         {
             _no = no;
-            _ad = ad;
-            _soyad = soyad;
-            _sinif = sinif;
+            _name = ad;
+            _surname = soyad;
+            _grade = sinif;
         }
 
         public Users() { }
         public void Yazdir()
         {
-            Console.WriteLine("İsim: {0} Soyisim: {1} No: {2} Sınıf: {3}", Ad, Soyad, No, Sinif);
+            Console.WriteLine("İsim: {0} Soyisim: {1} No: {2} Sınıf: {3}", Name, Surname, No, Grade);
         }
 
         public void SinifDusur()
         {
-            this.Sinif = this.Sinif - 1;
+            this.Grade = this.Grade - 1;
         }
         public void SinifYukselt()
         {
-            this.Sinif = this.Sinif + 1;
+            this.Grade = this.Grade + 1;
         }
 
     }

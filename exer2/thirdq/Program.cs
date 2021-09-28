@@ -6,50 +6,45 @@ namespace thirdq
     {
         static void Main(string[] args)
         {
-            /* Klavyeden girilen cümle içerisindeki sesli harfleri bir dizi içerisinde saklayan ve dizinin elemanlarını sıralayan programı yazınız. */
+            /* Klavyeden girilen cümle içerisindeki sesli harfleri bir _array içerisinde saklayan ve _arraynin elemanlarını sıralayan programı yazınız. */
 
             string sesli = "aeıioöuüAEIİOÖUÜ";
             int sayac = 0;
 
-
             Console.WriteLine("Cümle giriniz:");
-            string cumle = Console.ReadLine();
+            string sntnc = Console.ReadLine();
 
-            for (int i = 0; i < cumle.Length; i++)
+            for (int i = 0; i < sntnc.Length; i++)
             {
                 for (int j = 0; j < sesli.Length; j++)
                 {
-                    if (cumle[i] == sesli[j])
+                    if (sntnc[i] == sesli[j])
                         sayac++;
                 }
             }
 
-            string[] dizi = new string[sayac];
+            string[] _array = new string[sayac];
 
             Console.WriteLine(sayac+" sesli harf vardır.");
 
             int x=0;
 
-            for (int i = 0; i < cumle.Length; i++)
+            for (int i = 0; i < sntnc.Length; i++)
             {
                 for (int j = 0; j < sesli.Length; j++)
                 {
-                    if (cumle[i] == sesli[j])
+                    if (sntnc[i] == sesli[j])
                     {
-                        dizi[x] = cumle[i].ToString();
+                        _array[x] = sntnc[i].ToString();
                          x++;
-                    }
-                        
+                    }  
                 }
-               
             }
 
-            Array.Sort(dizi);
+            Array.Sort(_array);
 
-            foreach (var item in dizi)
+            foreach (var item in _array)
                 Console.WriteLine(item);
-
-
         }
     }
 }
