@@ -5,23 +5,21 @@ class Solution
 {
     public static void insertionSort(int[] A)
     {
-        for (int i = 0; i < A.Length; i++)
+        for(int i=0;i<A.Length;i++)
         {
-            for (int j = 0; j < A.Length; j++)
+            for(int j=0;j<A.Length;j++)
             {
-                if (A[i] > A[j])
+                if(A[i]<A[j])
                 {
                     int temp = A[j];
                     A[j] = A[i];
                     A[i] = temp;
                 }
-            }
+            } 
         }
-
-        for (int i = A.Length - 1; i >= 0; i--)
-        {
-            Console.Write(A[i] + " ");
-        }
+        
+        foreach(int item in A)
+            Console.Write(item+" ");  
     }
 
     static void Main(string[] args)
