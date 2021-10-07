@@ -14,7 +14,7 @@ namespace TimeConversion
 
             values[2] = values[2].Substring(0, 2);
 
-            if (meridiem == "PM" && int.Parse(values[0]) != 12)
+            if (meridiem == "PM" && values[0] != "12")
             {
                 values[0] = (int.Parse(values[0]) + 12).ToString();
             }
