@@ -1,0 +1,34 @@
+.header-title {
+    color: red;
+}
+
+#wrap {
+    text-align: center;
+}
+
+.menu-links {
+    margin-left: 10px;
+}
+
+.page-title {
+    color: lawngreen;
+}
+
+.lil-title {
+    color: indigo;
+}
+
+/*List*/
+.list-title {
+    color: indigo;
+}
+
+.list-item {
+    list-style-position: inside;
+}
+
+.list-pic {
+    width: 200px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
