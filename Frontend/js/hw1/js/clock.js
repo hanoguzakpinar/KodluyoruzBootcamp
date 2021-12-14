@@ -31,6 +31,7 @@ function showTime() {
             break;
         case 6:
             day = " Cumartesi";
+            break;
     }
 
     myClock.innerHTML = time + day;
